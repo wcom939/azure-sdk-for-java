@@ -81,6 +81,7 @@ public class VectorSessionToken implements ISessionToken {
 
         ValueHolder<UnmodifiableMap<Integer, Long>> localLsnByRegion = ValueHolder.initialize(null);
 
+        System.out.println("CreateSessionToken:" + sessionToken);
         if (VectorSessionToken.tryParseSessionToken(
                 sessionToken,
                 versionHolder,
