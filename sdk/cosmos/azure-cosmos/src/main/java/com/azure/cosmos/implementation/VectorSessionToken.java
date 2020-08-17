@@ -247,6 +247,7 @@ public class VectorSessionToken implements ISessionToken {
             return false;
         }
 
+        System.out.println(sessionToken);
         String[] segments = StringUtils.split(sessionToken, VectorSessionToken.SegmentSeparator);
 
         if (segments.length < 2) {
